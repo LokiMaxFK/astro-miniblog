@@ -1,0 +1,15 @@
+---
+    const {image, url, title} = Astro.props;
+---
+
+<li>
+    <img src={image.url} >
+    <a href={url}>{title}</a>
+</li>
+
+<style>
+    img{
+        width: 200px;
+        display: block;
+    }
+</style>
